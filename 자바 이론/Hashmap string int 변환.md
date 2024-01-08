@@ -50,8 +50,6 @@ HashMap<String, String> map = new HashMap<String, String>();
 
 해시맵에 값을 넣으려면 put 가져오려면 get
 
-tmp = my_string.charAt(i);
-
 String -> int
 
 Integer.parseInt( 값 )
