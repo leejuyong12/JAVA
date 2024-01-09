@@ -61,3 +61,45 @@ class Solution {
     System.out.println((int) 'A'); //>> 65
     System.out.println((char) 65); //>> A
 ```
+
+
+
+```java
+
+import java.util.Arrays;
+class Solution {
+    public String solution(String my_string) {
+        String result = "";
+        String[] tmp = my_string.toLowerCase().split("");
+        Arrays.sort(tmp);
+        for(int i=0;i<tmp.length;i++){
+            result += tmp[i];
+        }
+        return result;
+    }
+}
+```
+
+split 하면서 toLowerCase() 할 수 있다~
+
+```java
+import java.util.Arrays;
+class Solution {
+    public String solution(String my_string) {
+        my_string = my_string.toLowerCase(); 
+        
+        char[] chArr = my_string.toCharArray();
+        Arrays.sort(chArr);
+        
+        String answer = new String(chArr);
+        return answer;
+    }
+}
+```
+
+```
+  1. my_string을 소문자로 변경한다. ( toLowerCase() )
+  2. 변경한 문자열을 char 배열에 각각 넣는다. ( toCharArray() )
+  3. 사전 순으로 정렬한다. ( Arrays.sort() )
+  4. 정렬한 char 배열을 String 생성자의 인자로 넣어서 문자열로 변환시켜 answer에 저장한다.
+```
